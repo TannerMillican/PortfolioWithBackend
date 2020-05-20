@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <style>
+    body {
+      background: url(assets/img/space.jpg);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -O-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal">
+    <div>
+      <ul class="vertical medium-horizontal">
+        <li>
+          <p><a data-open="exampleModal1" class="welcomeAndAboutMeText"><h3>Welcome, click for more info</h3></a></p>
+
+          <div class="reveal" id="exampleModal1" data-reveal>
+            <div class="media-object">
+              <div class="media-object-section" id="pictureObject">
+                <img src="assets/img/Me.JPG" alt="My Picture" id="myPicture">
+              </div>
+              <div class="media-object-section">
+                <p>
+                  My name is Tanner Millican. I'm a freelance web developer from Eastland, Texas. I've had quite a few
+                  other jobs,
+                  but my
+                  most
+                  recent one was as a POS field technician. I've always had a great fondness for computers and
+                  technology
+                  in
+                  general.
+                </p>
+                <p>
+                  That fondness for technology is what has lead me to the world of coding and web development. Having
+                  been
+                  a POS technician, I was able to get some hands on experience actually getting to work with technology
+                  (computers and company intranet mostly). But something was missing, I wasn't satisfied. And then I
+                  found the Coding Bootcamp at UT in Austin, Texas.
+                </p>
+                <p>
+                  There, I've learned how to make quality, user-friendly, mobile-first responsive web sites that meet
+                  and exceed client expectations. Web sites that I've built utilize many technologies from HTML, CSS,
+                  and JavaScript, to Node.Js, Express.Js, MySQL, and others.
+                </p>
+                <div class="off-canvas-wrapper">
+                  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+                      <!-- left off-canvas markup -->
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="button" id="offCanvasProjects" data-toggle="offCanvasLeft">Projects and their Repositories</button>
+              </div>
+            </div>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
