@@ -2,8 +2,14 @@
     background-color: #2F4F4F;
 }
 
+#nav-text {
+    color: cyan;
+    font-family: 'Anton', sans-serif;
+}
+
 #page-text {
     color: cyan;
+    font-family: 'Bitter', serif;
 }
 
 #selfPicture {
@@ -27,13 +33,13 @@
 }
 
 #sendersEmail {
-    width: 275%;
+    width: 200%;
 }
 
 #emailSubject {
-    width: 275%;
+    width: 200%;
 }
 
 #emailBody {
-    width: 275%;
+    width: 200%;
 }
