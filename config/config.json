@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "TransRights_420",
-    "database": "exampledb",
+    "database": "repos_db",
     "host": "localhost",
     "dialect": "mysql"
   },

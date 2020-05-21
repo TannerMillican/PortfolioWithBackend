@@ -1,5 +1,5 @@
-$(document).foundation(() => {
-    $("#offCanvasProjects").on("click", () => {
+$(document).ready(() => {
+    $("#loadProjects").on("click", () => {
         $.get("/api/projects", (res) => {
             console.log(res)
         })

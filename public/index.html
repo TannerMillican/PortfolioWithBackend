@@ -1,96 +1,128 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="./styles/style.css">
-
-  <style>
-    body {
-      background: url(assets/img/space.jpg);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -O-background-size: cover;
-      background-size: cover;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./styles/style.css">
+    <style>
+        body {
+            background-image: url(./assets/img/matrix.gif);
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -O-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
-    </div>
-  </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="page-text" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page-text" href="/contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <div id="modal">
-    <div>
-      <ul class="vertical medium-horizontal">
-        <li>
-          <p><a data-open="exampleModal1" class="welcomeAndAboutMeText"><h3>Welcome, click for more info</h3></a></p>
-
-          <div class="reveal" id="exampleModal1" data-reveal>
-            <div class="media-object">
-              <div class="media-object-section" id="pictureObject">
-                <img src="assets/img/Me.JPG" alt="My Picture" id="myPicture">
-              </div>
-              <div class="media-object-section">
-                <p>
-                  My name is Tanner Millican. I'm a freelance web developer from Eastland, Texas. I've had quite a few
-                  other jobs,
-                  but my
-                  most
-                  recent one was as a POS field technician. I've always had a great fondness for computers and
-                  technology
-                  in
-                  general.
-                </p>
-                <p>
-                  That fondness for technology is what has lead me to the world of coding and web development. Having
-                  been
-                  a POS technician, I was able to get some hands on experience actually getting to work with technology
-                  (computers and company intranet mostly). But something was missing, I wasn't satisfied. And then I
-                  found the Coding Bootcamp at UT in Austin, Texas.
-                </p>
-                <p>
-                  There, I've learned how to make quality, user-friendly, mobile-first responsive web sites that meet
-                  and exceed client expectations. Web sites that I've built utilize many technologies from HTML, CSS,
-                  and JavaScript, to Node.Js, Express.Js, MySQL, and others.
-                </p>
-                <div class="off-canvas-wrapper">
-                  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-                    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-                      <!-- left off-canvas markup -->
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="button" id="offCanvasProjects" data-toggle="offCanvasLeft">Projects and their Repositories</button>
-              </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- placeholder -->
             </div>
-            <button class="close-button" data-close aria-label="Close reveal" type="button">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </li>
-      </ul>
+            <div class="col-md-8">
+                <div class="card card-dark bg-dark">
+                    <img src="./assets/img/Me.JPG" id="selfPicture" class="card-img-top" alt="Me">
+                    <div class="card-body">
+                    <h5 class="card-title" id="page-text">About Me</h5>
+                    <p id="page-text">
+                        My name is Tanner Millican. I'm a freelance web developer from Eastland, Texas. I've had quite a few
+                        other jobs,
+                        but my
+                        most
+                        recent one was as a POS field technician. I've always had a great fondness for computers and
+                        technology
+                        in
+                        general.
+                    </p>
+                    <p id="page-text">
+                        That fondness for technology is what has lead me to the world of coding and web development. Having
+                        been
+                        a POS technician, I was able to get some hands on experience actually getting to work with technology
+                        (computers and company intranet mostly). But something was missing, I wasn't satisfied. And then I
+                        found the Coding Bootcamp at UT in Austin, Texas.
+                    </p>
+                    <p id="page-text">
+                        There, I've learned how to make quality, user-friendly, mobile-first responsive web sites that meet
+                        and exceed client expectations. Web sites that I've built utilize many technologies from HTML, CSS,
+                        and JavaScript, to Node.Js, Express.Js, MySQL, and others.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- placeholder div -->
+                        </div>
+                        <div class="col-md-4">
+                        <button type="button" class="btn btn-primary" id="loadProjects" data-toggle="modal" data-target="#exampleModal">
+                            Projects
+                        </button>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- placeholder div -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-dark bg-dark">
+                    <h5 class="modal-title" id="exampleModalLabel"><p id="page-text">My Projects</p></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body modal-body-dark bg-dark">
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-2">
+                <!-- placeholder -->
+            </div>
+        </div>
     </div>
-  </div>
 
-
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        $("#loadProjects").on("click", () => {
+            event.preventDefault();
+            $.get("api/users", (res) => {
+                console.log(res)
+            })
+        })
+    </script>
 </body>
 
 </html>
