@@ -14,6 +14,26 @@
     transform: rotate(270deg);
 }
 
-.card {
+#card {
     width: 750px;
+}
+
+.form-group > textarea {
+    width: inherit;
+}
+
+.form-group > input {
+    width: inherit;
+}
+
+#sendersEmail {
+    width: 275%;
+}
+
+#emailSubject {
+    width: 275%;
+}
+
+#emailBody {
+    width: 275%;
 }

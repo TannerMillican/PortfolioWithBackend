@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="../public/js/email.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="./styles/style.css">
+        <style>
+            body {
+                background-image: url(./assets/img/matrix.gif);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -O-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    </head>
 <body>
-    
-    <form>
-        <label>Your Email Address
-            <input type="text" id="sendersEmail" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
-        </label>
-        <label>
-            Subject
-            <input type="text" id="emailSubject">
-        </label>
-        <label>
-            Body
-            <textarea placeholder="body" id="emailBody"></textarea>
-        </label>
 
-        <div class="input-group-button">
-            <input type="submit" class="button" value="Submit">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="page-text" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page-text" href="/contact">Contact Me</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    
 
-    </form>
+    <div class="row">
+        <div class="col-md-2">
+            <!-- placeholder div -->
+        </div>
+        <div class="col-md-8">
+            <div class="card card-dark bg-dark" id="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label id="page-text">Your Email Address
+                                <hr>
+                                <input type="text" class="form-control-lg" id="sendersEmail" placeholder="Email Address" aria-describedby="exampleHelpText">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label id="page-text">
+                                Subject
+                                <hr>
+                                <input type="text" class="form-control-lg" id="emailSubject" placeholder="Subject">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label id="page-text">
+                                Body
+                                <hr>
+                                <textarea class="form-control-lg" placeholder="Body" id="emailBody"></textarea>
+                            </label>
+                        </div>
+                        <br>
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <!-- placeholder div -->
+        </div>
+    </div>
+
 </body>
 </html>
