@@ -5,7 +5,7 @@ var path = require("path");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -18,8 +18,9 @@ app.set("view engine", "html");
 app.engine("html", require("ejs").renderFile);
 
 // Routes
-require("./routes/htmlRoutes")(app);
 require("./routes/repoRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
 
 var syncOptions = { force: false };
 

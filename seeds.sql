@@ -1,4 +1,4 @@
-INSERT INTO Repos (repo_name, repo_link, deployed_link)
+INSERT INTO repos (repo_name, repo_link, deployed_link)
     values ("Psychic", "https://github.com/TannerMillican/Psychic-Game", "https://tannermillican.github.io/Psychic-Game/"),
     ("Crystals", "https://github.com/TannerMillican/unit-4-game", "https://tannermillican.github.io/unit-4-game/"),
     ("Star Wars Trivia", "https://github.com/TannerMillican/TriviaGame", "https://tannermillican.github.io/TriviaGame/"),

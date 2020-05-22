@@ -126,8 +126,28 @@
     <script>
         $("#loadProjects").on("click", () => {
             event.preventDefault();
-            $.get("api/users", (res) => {
-                console.log(res)
+            $.get("api/projects", (res) => {
+
+                for (var i = 0; i < res.length; i++) {
+
+                    var projectName = $("<h4>");
+                    projectName.attr("id", "page-text")
+                    projectName.text(res[i].repo_name);
+
+                    var projectRepoLink = $("<a>");
+                    projectRepoLink.attr("href", res[i].repo_link);
+                    projectRepoLink.text("GitHub repository link");
+
+                    var projectDeployedLink = $("<a>");
+                    projectDeployedLink.attr("href", res[i].repo_link);
+                    projectDeployedLink.text("Deployed Project link");
+
+                    $(".modal-body").append(projectName);
+                    $(".modal-body").append(projectRepoLink);
+                    $(".modal-body").append("</br>");
+                    $(".modal-body").append(projectDeployedLink);
+
+                }
             })
         })
     </script>
