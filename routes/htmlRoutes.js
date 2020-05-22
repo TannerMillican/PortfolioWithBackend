@@ -10,9 +10,8 @@ module.exports = function(app) {
     app.get("/contact", (req, res) => {
       res.sendFile(path.join(__dirname, "../public/contact.html"))
     })
-  
-    // Render 404 page for any unmatched routes
-    // app.get("*", function(req, res) {
-    //   res.render("404");
-    // });
+
+    app.get("*", function(req, res) {
+      res.render("404");
+    });
   };

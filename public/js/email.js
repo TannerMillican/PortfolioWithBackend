@@ -1,7 +1,9 @@
-$(document).ready(function(){
+// $(document).on("load", function(){
 
-    $("#email-button").on("click", function(event) {
-        
+    function sendEmail(event) {
+        console.log("hello world")
+
+
         var senderEmail = $("#sendersEmail").val().trim();
         var emailSubject = $("#emailSubject").val().trim();
         var emailBody = $("#emailBody").val().trim();
@@ -33,5 +35,5 @@ $(document).ready(function(){
             }
         }
 
-    })
-})
+    }
+// })
