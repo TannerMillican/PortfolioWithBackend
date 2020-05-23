@@ -8,4 +8,4 @@ INSERT INTO repos (repo_name, repo_link, deployed_link)
     ("Liri App", "https://github.com/TannerMillican/liri-node-app", ""),
     ("Bamazon", "https://github.com/TannerMillican/Bamazon", ""),
     ("Friend Finder", "https://github.com/TannerMillican/FriendFinder", "https://lit-savannah-27715.herokuapp.com/"),
-    ("Fantasy Football Finder", "https://github.com/cshanebrown78/Project_2", "https://immense-dawn-88778.herokuapp.com/")
+    ("Fantasy Football Finder", "https://github.com/cshanebrown78/FantasyFootballAdvisor", "https://immense-dawn-88778.herokuapp.com/")
