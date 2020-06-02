@@ -1,4 +1,6 @@
-// $(document).on("load", function(){
+$(document).on("load", function(){
+
+    $("#email-button").click(sendEmail(event))
 
     function sendEmail(event) {
         console.log("hello world")
@@ -36,4 +38,4 @@
         }
 
     }
-// })
+})
